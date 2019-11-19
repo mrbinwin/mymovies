@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Мои фильмы</string>
+    <string name="home">Главная</string>
+    <!-- Movies search -->
+    <string name="error_tmdb_api_key">Ошибка. Проверьте ключ TMDB API</string>
+    <string name="search_movies">Поиск фильмов</string>
+    <string name="favorites_added">Добавлено в избранное</string>
+    <string name="favorites_removed">Удалено из избранного</string>
+    <string name="sort_by_popularity">по популярности</string>
+    <string name="sort_by_rating">по рейтингу</string>
+    <string name="description">Описание</string>
+    <string name="favorite_icon">Избранное</string>
+    <string name="label_title">Название</string>
+    <string name="original_title">Оригинальное название</string>
+    <string name="poster">Постер</string>
+    <string name="rating">Рейтинг</string>
+    <string name="release_date">Дата премьеры</string>
+    <string name="movie_name">Название фильма</string>
+    <!-- Movie details -->
+    <string name="watch_online">Смотреть онлайн</string>
+    <string name="play_a_trailer">Смотреть трейлер</string>
+    <!-- Torrent search -->
+    <string name="torrent_search_title">Поиск торрентов</string>
+    <string name="torrent_search_error">Ошибка. Не удалось выполнить поиск торрент-раздач. Проверьте настройки сервера поиска</string>
+    <string name="torrent_search_no_results">Доступных торрент-раздач не найдено</string>
+    <string name="torrent_search_result_name">Название раздачи</string>
+    <string name="torrent_search_result_size">Размер</string>
+    <string name="torrent_search_result_seeds">Сиды</string>
+    <string name="torrent_search_live_stream">Смотреть онлайн</string>
+    <!--Add torrent -->
+    <string name="add_torrent_tabs_files">Файлы</string>
+    <string name="add_torrent_tabs_info">Инфо</string>
+    <!--Main screen -->
+    <string name="main_screen_tabs_movies">Фильмы</string>
+    <string name="main_screen_tabs_downloads">Закачки</string>
+    <!--Downloads -->
+    <string name="downloads_title">Список скачивания</string>
+    <string name="downloads">Закачки</string>
+    <!-- Settings -->
+    <string name="pref_header_backend_api">Сервер поиска</string>
+    <string name="favorite_movies">Избранное</string>
+    <string name="torrent_list">Список торрентов</string>
+    <string name="pref_header_movies_api">API поиска фильмов</string>
+    <string name="pref_tmdb_api_key_title">TMDb ключ API</string>
+    <string name="pref_backend_settings_category">Настройка сервера</string>
+    <string name="pref_backend_url">Адрес сервера</string>
+    <string name="pref_backend_url_summary">Формат адреса: http[s]://{ip}:{port}/api/</string>
+    <string name="enable_backend_basic_auth">Базовая авторизация</string>
+    <string name="pref_backend_basic_auth_username">Логин</string>
+    <string name="pref_backend_basic_auth_password">Пароль</string>
+
+    <string name="small_poster">Превью постера</string>
+
+    <string name="torrent_list_title">Список торрентов</string>
+</resources>

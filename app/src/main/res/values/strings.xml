@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">My movies</string>
+    <string name="home">Home</string>
+    <!-- Movies search -->
+    <string name="error_tmdb_api_key">Error. Please check TMDB API key</string>
+    <string name="search_movies">Search movies</string>
+    <string name="favorites_added">Added to favorites</string>
+    <string name="favorites_removed">Removed from favorites</string>
+    <string name="sort_by_rating">by rating</string>
+    <string name="sort_by_popularity">by popularity</string>
+    <string name="poster">Poster</string>
+    <string name="favorite_icon">Favorites</string>
+    <string name="label_title">Title</string>
+    <string name="original_title">Original title</string>
+    <string name="rating">Rating</string>
+    <string name="release_date">Release date</string>
+    <string name="description">Description</string>
+    <string name="small_poster">Poster preview</string>
+    <string name="movie_name">Movie name</string>
+    <!-- Movie details -->
+    <string name="watch_online">Watch online</string>
+    <string name="play_a_trailer">Play a trailer</string>
+    <!-- Torrent search -->
+    <string name="torrent_search_title">Torrent search</string>
+    <string name="torrent_search_error">Error. Can not load search results. Please check backend settings</string>
+    <string name="torrent_search_no_results">No available torrents found</string>
+    <string name="torrent_search_result_name">Torrent Title</string>
+    <string name="torrent_search_result_size">Size</string>
+    <string name="torrent_search_result_seeds">Seeds</string>
+    <string name="torrent_search_live_stream">Live stream</string>
+    <!--Add torrent -->
+    <string name="add_torrent_tabs_info">Info</string>
+    <string name="add_torrent_tabs_files">Files</string>
+    <!--Main screen -->
+    <string name="main_screen_tabs_movies">Movies</string>
+    <string name="main_screen_tabs_downloads">Downloads</string>
+    <!--Downloads -->
+    <string name="downloads_title">Download list</string>
+    <string name="downloads">Downloads</string>
+    <!-- Settings -->
+    <string name="pref_header_backend_api">Backend API</string>
+    <string name="favorite_movies">Favorite movies</string>
+    <string name="torrent_list">Torrent list</string>
+    <string name="pref_header_movies_api">Movies search API</string>
+    <string name="pref_tmdb_api_key_title">TMDb API key</string>
+    <string name="pref_backend_settings_category">Backend</string>
+    <string name="pref_backend_url">Backend url</string>
+    <string name="pref_backend_url_summary">The format is: http[s]://{ip}:{port}/api/</string>
+    <string name="enable_backend_basic_auth">Basic auth</string>
+    <string name="pref_backend_basic_auth_username">Basic auth username</string>
+    <string name="pref_backend_basic_auth_password">Basic auth password</string>
+
+    <string name="torrent_list_title">Torrent list</string>
+</resources>

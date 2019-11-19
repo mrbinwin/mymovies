@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mymovies">
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_captain_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_captain_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.AddTorrentActivity" />
+        <activity android:name=".activities.DetailTorrentActivity" />
+        <activity android:name=".activities.TorrentSearchActivity" />
+        <activity android:name=".activities.FavoriteMoviesActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/settings">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".settings.PreferenceActivity" />
+        <activity android:name=".activities.MovieDetailActivity" />
+        <activity android:name=".dialogs.filemanager.FileManagerDialog" />
+
+        <provider
+            android:name=".utils.MainFileProvider"
+            android:authorities="com.example.mymovies.fileprovider"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".receivers.NotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.mymovies.receivers.NotificationReceiver.NOTIFY_ACTION_SHUTDOWN_APP" />
+                <action android:name="com.example.mymovies.receivers.NotificationReceiver.NOTIFY_ACTION_ADD_TORRENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.TorrentTaskService"
+            android:stopWithTask="false" />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <dist:module dist:instant="true" />
+
+</manifest>

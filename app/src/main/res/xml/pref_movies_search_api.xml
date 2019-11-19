@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/pref_key_tmdb_api_key"
+        android:title="@string/pref_tmdb_api_key_title" />
+
+    <PreferenceCategory
+        android:title="@string/pref_backend_settings_category">
+
+        <EditTextPreference
+            android:key="@string/pref_key_backend_url"
+            android:title="@string/pref_backend_url" />
+
+        <SwitchPreferenceCompat
+            android:key="@string/pref_key_enable_backend_basic_auth"
+            android:title="@string/enable_backend_basic_auth" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_backend_basic_auth_username"
+            android:title="@string/pref_backend_basic_auth_username"
+            android:dependency="@string/pref_key_enable_backend_basic_auth" />
+
+        <EditTextPreference
+            android:key="@string/pref_key_backend_basic_auth_password"
+            android:title="@string/pref_backend_basic_auth_password"
+            android:dependency="@string/pref_key_enable_backend_basic_auth" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

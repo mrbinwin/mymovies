@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="@string/pref_key_save_torrents_in"
+        android:title="@string/pref_save_torrents_in_title"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:title="@string/pref_save_torrent_files_title">
+
+        <SwitchPreferenceCompat
+            android:key="@string/pref_key_save_torrent_files"
+            android:title="@string/pref_save_torrent_files_title"
+            android:summary="@string/pref_save_torrent_files_summary" />
+
+        <Preference
+            android:key="@string/pref_key_save_torrent_files_in"
+            android:title="@string/pref_save_torrent_files_in_title"
+            android:dependency="@string/pref_key_save_torrent_files"
+            android:persistent="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

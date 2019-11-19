@@ -1,0 +1,4 @@
+<paths>
+    <cache-path name="cache" path="/" />
+    <external-files-path name="external-files" path="/torrents/" />
+</paths>

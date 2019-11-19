@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/search_movies"
+        android:title="@string/search_movies" />
+
+    <item
+        android:id="@+id/downloads_menu"
+        android:title="@string/downloads" />
+
+    <item
+        android:id="@+id/favorite_movies_menu"
+        android:title="@string/favorite_movies" />
+
+    <item
+        android:id="@+id/settings_menu"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/shutdown_app_menu"
+        android:title="@string/shutdown" />
+
+</menu>
